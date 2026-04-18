@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Web</title>
+    <!-- cdn boostrap 5css -->
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../resources/assets/icons/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="card justify-content-center">
+                <div class="card-body">
+                    <h4 class="card-title">Calculator</h4>
+                    <form action="">
+                        <div class="mb-3 row">
+                            <div class="col-10">
+                                <input type="text" class="form-control" name="valueCalculator" id="valueCalculator"
+                                    aria-describedby="" placeholder="Type here for select the number" />
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-primary" id="ButtonTrash">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center align-items-center g-2">
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button1">1</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button2">2</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button3">3</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="ButtonCalculator2"><i
+                                    class="bi bi-calculator-fill"></i></button>
+                        </div>
+                        <div class="row justify-content-center align-items-center g-2">
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button4">4</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button5">5</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button6">6</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="ButtonPlus">+</button>
+                        </div>
+                        <div class="row justify-content-center align-items-center g-2">
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button7">7</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button8">8</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button9">9</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
+                                id="ButtonMinus">-</button>
+                        </div>
+                        <div class="row justify-content-center align-items-center g-2">
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
+                                id="ButtonSlash">/</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
+                                id="ButtonTimes">*</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button0">0</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
+                                id="ButtonEqual">=</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./../resources/js/bootstrap.bundle.min.js"></script>
+    <script src="../controllers/Calculator.js"></script>
+</body>
+
+</html>
