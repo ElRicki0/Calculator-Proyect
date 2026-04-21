@@ -33,33 +33,43 @@
 
                         </div>
                         <div class="row justify-content-center align-items-center g-2">
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button1">1</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button2">2</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button3">3</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="ButtonCalculator2"><i
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button1"
+                                onclick="addValue(1, 'NUMBER')">1</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button2"
+                                onclick="addValue(2, 'NUMBER')">2</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button3"
+                                onclick="addValue(3, 'NUMBER')">3</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="ButtonCalculator2" ><i
                                     class="bi bi-calculator-fill"></i></button>
                         </div>
                         <div class="row justify-content-center align-items-center g-2">
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button4">4</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button5">5</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button6">6</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="ButtonPlus">+</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue(4, 'NUMBER')"
+                                id="Button4">4</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue(5, 'NUMBER')"
+                                id="Button5">5</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue(6, 'NUMBER')"
+                                id="Button6">6</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue('+', 'ACTION')"
+                                id="ButtonPlus">+</button>
                         </div>
                         <div class="row justify-content-center align-items-center g-2">
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button7">7</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button8">8</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button9">9</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue(7, 'NUMBER')"
+                                id="Button7">7</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue(8, 'NUMBER')"
+                                id="Button8">8</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue(9, 'NUMBER')"
+                                id="Button9">9</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" onclick="addValue('-', 'ACTION')"
                                 id="ButtonMinus">-</button>
                         </div>
                         <div class="row justify-content-center align-items-center g-2">
                             <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
-                                id="ButtonSlash">/</button>
+                                id="ButtonSlash" onclick="addValue('/', 'ACTION')">/</button>
                             <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
-                                id="ButtonTimes">*</button>
-                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button0">0</button>
+                                id="ButtonTimes" onclick="addValue('*', 'ACTION')">*</button>
+                            <button type="button" class=" btn btn-outline-dark mx-2 my-2 col" id="Button0", onclick="addValue(0, 'NUMBER')">0</button>
                             <button type="button" class=" btn btn-outline-dark mx-2 my-2 col"
-                                id="ButtonEqual">=</button>
+                                id="ButtonEqual" onclick="procesar()">=</button>
                         </div>
 
                     </form>
