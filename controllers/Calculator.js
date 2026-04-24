@@ -4,6 +4,7 @@ const BUTTON_PLUS = document.getElementById('ButtonPlus'),
     BUTTON_SLASH = document.getElementById('ButtonSlash'),
     BUTTON_TIMES = document.getElementById('ButtonTimes'),
     BUTTON_EQUALS = document.getElementById('ButtonEqual'),
+    BUTTON_DELETE = document.getElementById('ButtonDelete'),
     BUTTON_TRASH = document.getElementById('ButtonTrash');
 // ? value calculator  
 const VALUE_CALCULATOR = document.getElementById('valueCalculator');
@@ -18,6 +19,10 @@ BUTTON_TRASH.addEventListener('click', () => {
     VALUE_CALCULATOR.value = "";
     MATH_VALUE1 = 0;
     MATH_VALUE2 = 0;
+});
+
+BUTTON_DELETE.addEventListener('click', ()=>{
+    VALUE_CALCULATOR.value = input.value.slice(0, -1);
 });
 
 const addValue = (value, typeAct) => {
